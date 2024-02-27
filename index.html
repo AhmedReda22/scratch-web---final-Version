@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scratch Game - Stellar</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <button id="resetButton" class="btn">Reset</button>
+      <div class="scratch-container">
+        <div class="scratch-card">
+          <div class="code">
+            <img src="images/Artboard 22.png" width="100" alt="" />
+            <video src=""></video>
+          </div>
+        </div>
+        <canvas id="scratch-card1" width="1500" height="500"></canvas>
+        <div id="popup" style="display: none">
+          <div>
+            <p class="fs-2">Great!</p>
+            <button id="closeButton" class="btn">Back To Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      // Add event listener to close button
+      document
+        .getElementById("closeButton")
+        .addEventListener("click", function () {
+          document.getElementById("popup").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
+
+<button id="closeButton">Back To Home</button>
